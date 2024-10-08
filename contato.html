@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <!--FIM GOOGLE FONTS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Contato - Portfólio Joyce</title>
+</head>
+<body>
+    <header>
+        <div class="home">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="Meu logotipo">
+                </a>
+            </div><!--logo-->
+            
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre-mim.html">Sobre Mim</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div><!--home-->
+    </header>
+
+    <main>
+        <section class="contato">
+            <h2 class="titulo-contato">Entre em Contato</h2>
+            <form>
+                <input type="text" placeholder="Seu Nome" required class="input-form">
+                <input type="email" placeholder="Seu Email" required class="input-form">
+                <textarea placeholder="Sua Mensagem" required class="input-form"></textarea>
+                <button type="submit" class="botao-enviar">Enviar</button>
+            </form>
+
+            <div class="contatos">
+                <p class="info-contato">Email: joycecristinee@gmail.com</p>
+                <a href="https://github.com/JoyceCristineDS" target="_blank" class="social-button">
+                    <img src="images/github-removebg-preview.png" alt="GitHub" class="social-icon"> GitHub
+                </a>
+                <a href="https://linkedin.com/in/joyce-cristine-3376531b0" target="_blank" class="social-button">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="social-icon"> LinkedIn
+                </a>
+            </div>
+            <div class="map-container">
+                <h3 class="titulo-localizacao">Localização</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.246058042333!2d-35.02616368492084!3d-8.04605206930659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab2fc94e767365%3A0x6ab3f847919c0457!2sFaculdade%20Pernambucana%20de%20Sa%C3%BAde!5e0!3m2!1spt-BR!2sbr!4v1696640360930!5m2!1spt-BR!2sbr" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="linha-separadora"></div>
+        <div class="informacoes">
+            <p class="info-rodape">© 2024. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

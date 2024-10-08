@@ -1,0 +1,624 @@
+/* Estilo Geral */
+body {
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.6;
+    color: #333; 
+    background-color: #e4e2dd; 
+    margin: 0;
+    padding: 0;
+}
+/* CONTATO */
+.contato {
+    padding: 40px 4%;
+    text-align: center;
+}
+
+.contato h2 {
+    margin-bottom: 20px;
+    font-family: 'Abril Fatface', serif; 
+}
+
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.contato button {
+    background-color: #ffffff; 
+    color: #ffffff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.contato button:hover {
+    background-color: #0056b3; 
+}
+
+/* CONTATOS */
+.contatos {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contatos p {
+    margin: 5px 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e4e2dd;
+    color: #000000;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.social-button:hover {
+    background-color: #d0cfcf; 
+}
+
+.social-icon {
+    width: 20px; 
+    height: auto;
+    margin-right: 8px; 
+}
+
+/* RODAPÉ */
+.rodape {
+    padding: 20px 4%;
+    background-color: #e4e2dd; 
+    text-align: center;
+}
+
+.linha-separadora {
+    border: none; 
+    border-top: 2px solid #bdbdbd; 
+    margin: 20px 0; 
+}
+
+.informacoes {
+    color: #000000; 
+    font-size: 14px; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+.map-container h3 {
+    margin-bottom: 10px;
+    font-family: 'Abril Fatface', serif; 
+}
+
+/* Títulos */
+h1, h2, h3 {
+    font-family: 'Abril Fatface', cursive; 
+    color: #2c3e50; 
+}
+
+/* Espaçamento */
+header, main, footer {
+    padding: 20px;
+    margin: 20px;
+}
+/* HOME */
+.home {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ESTILO CABEÇALHO */
+header {
+    padding: 40px 4%;
+}
+
+header > .home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #bdbdbd;
+    text-decoration: none; 
+}
+
+header a:hover {
+    color: #000000;
+    opacity: 0.5;
+    transform: scale(1.05);
+    display: inline-block;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header img {
+    width: 60%;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 20px 4%;
+}
+
+.txt-top-site {
+    color: #000000;
+    margin-left: 20%;
+    margin-top: -20px;
+    text-align: center;
+}
+
+main img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-top: 0;
+}
+
+.img-topo-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    animation: moveImage 5s infinite alternate ease-in-out; 
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+/* BOTÃO DE CONTATO */
+.Contato {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; 
+}
+
+.Contato button {
+    padding: 10px 20px;
+    background-color: #e4e2dd;
+    color: #000000;
+    border: 2px solid #bdbdbd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition:  background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Contato button:hover {
+    transform: scale(1.1);
+    border-color: #000000;
+}
+
+/* Acessibilidade */
+header a:focus, .Contato button:focus {
+    outline: 2px solid #000; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header > .home {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .secao-botoes {
+        flex-direction: column; 
+    }
+}
+
+/* PLAYER SPOTIFY */
+.spotify-playlist {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; 
+}
+
+.spotify-playlist iframe {
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* SOBRE MIM */
+.sobre-mim {
+    padding: 40px 4%;
+    text-align: center;
+    
+}
+
+.sobre-mim h2 {
+    margin-bottom: 20px;
+}
+
+.sobre-mim p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* EXPERIÊNCIAS */
+.experiencias {
+    padding: 40px 4%;
+    background-color: #e4e2dd; 
+}
+
+.experiencia {
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 4px solid #bdbdbd; 
+}
+
+.experiencia h3 {
+    margin: 10px 0;
+}
+
+.experiencia p {
+    margin: 5px 0;
+}
+
+@keyframes esteira {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    white-space: nowrap;
+    width: 100%; 
+    margin-top: 40px;
+}
+
+.skills {
+    background-color: #ffcc00; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+    width: 200px; 
+    margin: 10px auto; 
+    animation: esteira 20s linear infinite; 
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+th, td {
+    padding: 8px; 
+    text-align: left;
+    border: 1px solid #bdbdbd; 
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold; 
+}
+
+tbody tr:hover {
+    background-color: #e4e2dd;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+.skills li {
+    padding: 5px 0; 
+}
+
+/* SOBRE MIM */
+.sobre-mim {
+    padding: 40px 4%;
+    text-align: center;
+}
+
+.sobre-mim h2 {
+    margin-bottom: 20px;
+}
+
+.sobre-mim p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Botões de Links Pessoais */
+.botao-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botao-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #ffffff; 
+    color: #000000; 
+    padding: 12px 20px; 
+    margin: 0 10px; 
+    border: 2px solid #bdbdbd; 
+    border-radius: 50px; 
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.botao-links a img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px; 
+    border-radius: 50%; 
+}
+
+.botao-links a:hover {
+    background-color: #bdbdbd; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+    margin-top: 40px;
+}
+
+.skills {
+    background-color: #d7d3cc; 
+    border-radius: 15px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    width: 300px; 
+    margin-bottom: 20px; 
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+th, td {
+    padding: 10px; 
+    text-align: left; 
+    border: 1px solid #bdbdbd; 
+}
+
+th {
+    background-color: #f0f0f0; 
+    font-weight: bold; 
+}
+
+tbody tr:hover {
+    background-color: #e4e2dd; 
+}
+
+.skills ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.skills li {
+    padding: 5px 0; 
+}
+/* Seção dos vídeos */
+.video-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 40px; 
+}
+
+.video-container video {
+    width: 80%; 
+    max-width: 400px; 
+    margin: 10px 0; 
+    border-radius: 5px;
+}
+
+/* RODAPÉ */
+.rodape {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f4f4f4; 
+}
+/* PROJETOS */
+.projetos {
+    padding: 40px 4%;
+}
+
+.projetos h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.projetos .lista-projetos {
+    display: block; 
+}
+
+.projetos .projeto {
+    position: relative;
+    margin: 20px 0; 
+    padding: 40px; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    color: #000000;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projetos .projeto img.icon-caderno {
+    width: 50px; 
+    height: 50px; 
+    margin-right: 20px;
+}
+
+.projetos .projeto:nth-child(1) {
+    background-color: #A87676;
+    color: #000000;
+}
+
+.projetos .projeto:nth-child(2) {
+    background-color: #CA8787; 
+    color: #000000; 
+}
+
+.projetos .projeto:nth-child(3) {
+    background-color: #E1ACAC; 
+    color: #000000;
+}
+
+
+.projetos .projeto:hover {
+    transform: scale(1.09); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+}
+.projetos .projeto ul.lista-detalhada {
+    margin-top: 15px; 
+    padding-left: 20px; 
+}
+
+.projetos .projeto ul.lista-detalhada li {
+    margin-bottom: 10px; 
+    line-height: 1.5; 
+    list-style-type: disc; 
+}
+
+/* RODAPE */
+.rodape {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f4f4f4; 
+}
+
+
+/* CONTATO */
+.contato {
+    padding: 40px 4%;
+    text-align: center;
+}
+
+.contato h2 {
+    margin-bottom: 20px;
+}
+
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+
+.contato button {
+    background-color: #e4e2dd;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contatos {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contatos p {
+    margin: 5px 0;
+}
+
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e4e2dd;
+    color: #000000;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-button:hover {
+    background-color: #d0cfcf;
+}
+
+.social-icon {
+    width: 20px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: auto; /* Mantém a proporção do ícone */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+/* RODAPÉ */
+.rodape {
+    padding: 20px 4%;
+    background-color: #e4e2dd; /* Cor de fundo do rodapé */
+    text-align: center;
+}
+
+.linha-separadora {
+    border: none; /* Remove o estilo padrão da borda */
+    border-top: 2px solid #bdbdbd; /* Define a cor e espessura do traço */
+    margin: 20px 0; /* Margem acima e abaixo do traço */
+}
+
+.informacoes {
+    color: #000000; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
+}
+.map-container {
+    margin-top: 20px;
+}
+
+.map-container h3 {
+    margin-bottom: 10px;
+}
